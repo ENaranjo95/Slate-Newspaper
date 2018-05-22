@@ -1,0 +1,276 @@
+*{
+  box-sizing: border-box;
+}
+html{
+  font-size: 20px;
+}
+aside{
+  width: 28%;
+  float: left;
+}
+.trump{
+  margin-right: 2%;
+  width: 70%;
+  float: left;
+}
+.photo{
+  background-image: url(http://thehill.com/sites/default/files/article_images/donaldtrumptax_12216getty.jpg);
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  color: white;
+}
+.caption{
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 35%;
+  height: 300px;
+  text-align: center;
+  float: left;
+}
+.caption p{
+  color: yellow;
+}
+.caption figcaption{
+  font-size: .7rem;
+}
+.captions{
+  width: 35%;
+  height: 300px;
+  float: right;
+}
+.captions h6{
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  text-align: center;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+.captions ul{
+  list-style-type: none;
+}
+.captions ul li{
+  font-size: .8rem;
+  padding-bottom: 3%;
+}
+.moreTrump{
+  width: 30%;
+  margin-top: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+  float: left;
+  border: 1px solid lightgrey;
+}
+.moreTrump img{
+  padding-top: 1%;
+  width: 100%;
+  height: 90px;
+}
+.moreTrump h3{
+  margin-top: 2%;
+  padding-left: 5%;
+  padding-right: 29%;
+  font-size: 1.2rem;
+  text-align: left;
+}
+.blank{
+  width: 30%;
+  float: left;
+}
+.others{
+  width: 40%;
+  float: left;
+}
+.articles{
+  width: 90%;
+  margin-top: 4%;
+  margin-left: 4%;
+  margin-right: 4%;
+  padding-left: 4%;
+  padding-right: 4%;
+  height: 120px;
+  border: 1px solid lightgrey;
+}
+.articles + .articles{
+  background-color: #943838;
+  color: white;
+}
+.articles h3{
+  font-size: .9rem;
+  margin: 0;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+.articles figcaption{
+  font-size: .5rem;
+}
+.trump article{
+  display: none;
+}
+.logo{
+  height: 50px;
+  width: 100%;
+  background-color: #943838;
+  color: white;
+}
+.logo i{
+  color: white;
+  padding-right: 4%;
+}
+.logo h1{
+  font-size: 2.2rem;
+  margin-top: 0;
+  margin-right: 40%;
+  display: inline;
+}
+.bar{
+  height: 30px;
+  width: 100%;
+  background-color: black;
+}
+.bar h6{
+  font-size: .7rem;
+  color: white;
+  padding-left: 3%;
+  padding-right: 40%;
+  margin: 0;
+  display: inline;
+}
+.bar a{
+  font-size: .6rem;
+  text-decoration: none;
+  color: yellow;
+  display: inline;
+}
+aside ul{
+  padding-left: 4%;
+  margin: 0;
+  list-style-type: none;
+}
+aside ul li{
+  border-bottom: 1px solid lightgrey;
+}
+aside ul li a{
+  color: black;
+  text-decoration: none;
+}
+aside ul li a h5{
+  font-size: .7rem;
+  margin-top: 2%;
+  margin-bottom: 3%;
+}
+aside ul li figcaption{
+  font-size: .7rem;
+  color: lightgrey;
+  padding-top: 2%;
+}
+
+
+/************* Mobile ******************/
+/************ Response  **************/
+@media only screen and (max-width: 414px){
+  .trump{
+    width: 100%;
+    float: none;
+  }
+  .photo{
+    height: 200px;
+    width: 100%;
+  }
+  .caption{
+    height: 200px;
+  }
+  .caption h2{
+    font-size: .7rem;
+  }
+  .caption p{
+    font-size: .5rem;
+  }
+  .caption figcaption{
+    font-size: .4rem;
+  }
+  .captions{
+    height: 200px;
+  }
+  .captions h6{
+    font-size: .3rem;
+  }
+  .captions ul{
+    padding-left: 4%;
+  }
+  .captions ul li{
+    font-size: .4rem;
+  }
+  .moreTrump{
+    height: 200px;
+    width: 100%;
+  }
+  .moreTrump h3{
+    font-size: .65rem;
+    text-align: left;
+  }
+  .blank{
+    display: none;
+  }
+  .others{
+    width: 100%;
+  }
+  .articles{
+    height: 90px;
+  }
+  .articles h3{
+    font-size: .65rem;
+  }
+  .articles figcaption{
+    font-size: .5rem;
+  }
+  .logo{
+    height: 50px;
+    width: 100%;
+  }
+  .logo h1{
+    font-size: 2.2rem;
+  }
+  .bar h6{
+    font-size: .7rem;
+  }
+  .bar a{
+    font-size: .6rem;
+  }
+  aside{
+    margin-top: 5%;
+    width: 100%;
+  }
+}
+
+/****************** Tablet  ********************/
+/***************** Response *******************/
+@media (min-width:414px) and (max-width:1024px){
+  aside{
+    margin-top: 2%;
+    width: 100%;
+  }
+  .trump{
+    width: 100%;
+  }
+  .moreTrump{
+    width: 50%;
+  }
+  .blank{
+    display: none;
+  }
+  .others{
+    width: 50%;
+  }
+  .trump article{
+    display: none;
+  }
+  .bar{
+    display: none;
+  }
+  .stories{
+    display: none;
+  }
+}
